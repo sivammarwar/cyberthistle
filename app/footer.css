@@ -1,2 +1,25 @@
 /* Keep footer accents in the CyberThistle purple system. */
 .footer .brand > span { border-color: var(--violet2); color: var(--violet2); }
+
+.footer .footer-company-copy {
+  margin-top: 18px;
+  max-width: 340px;
+}
+
+.footer .footer-contact-details {
+  display: grid;
+  gap: 8px;
+  margin-top: 20px;
+  max-width: 340px;
+  font: 500 11px/1.65 "DM Mono", monospace;
+  color: #c1d0da;
+}
+
+.footer .footer-contact-details a {
+  color: #b992ff;
+  text-decoration: none;
+}
+
+.footer .footer-contact-details a:hover {
+  color: #fff;
+}
