@@ -1,0 +1,12 @@
+.about .section-title { max-width: 850px; }
+.about .section-title h2 { max-width: 800px; font-size: clamp(52px, 6.3vw, 94px); letter-spacing: -5px; }
+.about .section-title .lede { max-width: 730px; font-size: 18px; line-height: 1.72; }
+.about-layout { display: grid; grid-template-columns: minmax(0, 1.8fr) minmax(300px, .8fr); gap: clamp(30px, 5vw, 78px); align-items: stretch; }
+.about-layout .mission-grid { grid-template-columns: 1fr 1fr; gap: 34px; }
+.about .mission-grid article { padding: 28px 0; border-top-width: 3px; }
+.about .mission-grid h3 { max-width: 430px; margin-bottom: 16px; font-size: clamp(27px, 2.6vw, 39px); letter-spacing: -1.8px; line-height: 1.08; }
+.about .mission-grid p { max-width: 450px; font-size: 15px; line-height: 1.78; }
+.about .values { min-height: 100%; padding: 31px 30px; background: #e4d4f2; }
+.about .values > div { gap: 20px; padding: 19px 0; font-size: 16px; }
+.about .values b { min-width: 28px; font-size: 12px; }
+@media(max-width:850px){.about-layout{grid-template-columns:1fr}.about-layout .mission-grid{grid-template-columns:1fr 1fr}.about .values{min-height:0}}@media(max-width:560px){.about .section-title h2{font-size:52px;letter-spacing:-3px}.about .section-title .lede{font-size:16px}.about-layout .mission-grid{grid-template-columns:1fr}.about .mission-grid h3{font-size:29px}.about .mission-grid p{font-size:14px}}

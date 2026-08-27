@@ -1,0 +1,5 @@
+.hero-ticker { position: relative; z-index: 2; overflow: hidden; padding: 18px 0; background: var(--violet); color: #fff; border-bottom: 1px solid #7a38cc; white-space: nowrap; }
+.hero-ticker-track { display: flex; align-items: center; width: max-content; animation: hero-ticker 28s linear infinite; will-change: transform; }
+.hero-ticker-group { display: flex; flex: 0 0 auto; align-items: center; }.hero-ticker-group span { display: inline-flex; align-items: center; padding-right: clamp(52px, 7vw, 120px); font: 700 clamp(12px, 1.05vw, 16px) "DM Mono"; letter-spacing: .8px; }.hero-ticker-group span::after { width: 8px; height: 8px; margin-left: clamp(52px, 7vw, 120px); border: 1px solid #fff; border-radius: 50%; content: ""; }
+@keyframes hero-ticker { from { transform: translate3d(0,0,0); } to { transform: translate3d(-33.333333%,0,0); } }
+@media(prefers-reduced-motion:reduce){.hero-ticker-track{animation:none}}

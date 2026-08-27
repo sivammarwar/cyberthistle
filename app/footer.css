@@ -1,0 +1,2 @@
+/* Keep footer accents in the CyberThistle purple system. */
+.footer .brand > span { border-color: var(--violet2); color: var(--violet2); }

@@ -1,0 +1,7 @@
+.service { min-height: 340px; padding: 31px 24px 25px; }
+.service > span { font-size: 11px; }
+.service h3 { margin: 27px 0 14px; font-size: clamp(20px, 1.65vw, 25px); letter-spacing: -1px; line-height: 1.12; }
+.service p { font-size: 13px; line-height: 1.7; }
+.service small { font-size: 10px; line-height: 1.65; }
+.service a { margin-top: 23px; font-size: 12px; }
+@media(max-width:560px){.service{min-height:305px;padding:28px 21px}.service h3{font-size:22px}.service p{font-size:13px}}

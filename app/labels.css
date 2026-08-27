@@ -1,0 +1,6 @@
+/* Larger, more visible industrial section identifiers. */
+.section-title > .eyebrow { font-size: 13px; letter-spacing: 1.55px; }
+.waitlist-copy > .eyebrow { font-size: 12px; letter-spacing: 1.45px; }
+.waitlist-index { font-size: 12px; letter-spacing: 1.3px; }
+.hero-stage-copy .slide-count { font-size: 13px; letter-spacing: 1.35px; }
+@media(max-width:560px){.section-title > .eyebrow{font-size:11px}.waitlist-copy > .eyebrow,.waitlist-index,.hero-stage-copy .slide-count{font-size:11px}}

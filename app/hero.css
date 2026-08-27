@@ -1,0 +1,50 @@
+.hero {
+  min-height: 760px;
+  padding: 0 clamp(24px, 4.2vw, 82px);
+  display: grid;
+  align-items: center;
+}
+.hero-stage {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 1600px);
+  min-height: 650px;
+  margin: 0 auto;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+}
+.hero-stage-slide {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: minmax(290px, .8fr) minmax(520px, 1.6fr);
+  gap: clamp(32px, 6vw, 105px);
+  align-items: center;
+  min-height: 650px;
+  width: 100%;
+}
+.hero-stage-copy { padding: 40px 0 82px; }
+.hero-stage-copy .eyebrow { margin-bottom: 25px; }
+.hero-stage-copy .slide-count { margin: 0 0 13px; color: var(--lime); font: 10px "DM Mono"; letter-spacing: 1.2px; }
+.hero-stage-copy h1 { max-width: 550px; margin: 0 0 24px; color: #fff; font-size: clamp(52px, 5.6vw, 89px); line-height: .96; letter-spacing: -5px; }
+.hero-stage-copy > p:not(.eyebrow):not(.slide-count) { max-width: 470px; margin-bottom: 28px; color: #d2cadb; font-size: 15px; line-height: 1.72; }
+.stage-action { display: inline-flex; align-items: center; gap: 12px; padding: 15px 18px; background: var(--violet); color: #fff; font-size: 11px; font-weight: 800; box-shadow: 5px 5px 0 #0a0710; transition: .2s; }
+.stage-action:hover { transform: translate(-2px, -2px); background: #b26cff; }
+.hero-stage-visual { position: relative; min-height: 530px; overflow: hidden; border: 1px solid #b996d64d; border-radius: 22px; background-color: #20172b; background-position: 50% 50%; background-size: cover; box-shadow: 15px 20px 0 #0a071059; will-change: transform, opacity; transform: translateZ(0); }
+.hero-stage-visual::after { position: absolute; inset: 0; content: ""; background: linear-gradient(180deg, transparent 48%, #120d1ce0 100%); pointer-events: none; }
+.visual-hud, .visual-caption { position: absolute; z-index: 1; display: flex; align-items: center; justify-content: space-between; }
+.visual-hud { top: 0; right: 0; left: 0; padding: 17px 20px; border-bottom: 1px solid #ffffff28; background: #15101a99; color: #eee7f3; font: 9px "DM Mono"; letter-spacing: .8px; }
+.visual-hud b { color: var(--lime); font: 9px "DM Mono"; }
+.visual-caption { right: 28px; bottom: 25px; left: 28px; align-items: end; }
+.visual-caption span { color: var(--lime); font: 9px "DM Mono"; letter-spacing: .8px; }
+.visual-caption strong { color: #fff; font-size: clamp(17px, 1.5vw, 23px); line-height: 1.1; letter-spacing: -.8px; text-align: right; }
+.stage-controls { position: absolute; top: 50%; right: -48px; left: -48px; z-index: 5; display: flex; align-items: center; justify-content: space-between; transform: translateY(-50%); pointer-events: none; }
+.stage-controls > button { display: grid; width: 52px; height: 52px; place-items: center; border: 1px solid #ffffff50; border-radius: 50%; background: #ffffffb8; color: #17121f; cursor: pointer; opacity: .65; transition: opacity .2s, background .2s, transform .2s; pointer-events: auto; }
+.stage-controls > button:hover { background: var(--violet2); opacity: 1; transform: scale(1.04); }
+.stage-controls .carousel-dots { display: none; gap: 8px; }
+.stage-controls .carousel-dots button { width: 24px; height: 3px; padding: 0; border: 0; background: #8b7a94; cursor: pointer; }
+.stage-controls .carousel-dots button.active { background: var(--lime); }
+@media (max-width: 850px) { .hero { min-height: auto; padding: 30px 24px 85px; } .hero-stage { min-height: 790px; } .hero-stage-slide { grid-template-columns: 1fr; gap: 18px; min-height: 790px; } .hero-stage-copy { padding: 35px 0 0; } .hero-stage-copy h1 { max-width: 670px; } .hero-stage-visual { min-height: 440px; } .stage-controls { top: auto; right: 0; bottom: -65px; left: 0; transform: none; } .stage-controls .carousel-dots { display: flex; } }
+@media (max-width: 560px) { .hero { padding: 24px 20px 74px; } .hero-stage-copy h1 { font-size: 52px; letter-spacing: -3px; } .hero-stage-copy > p:not(.eyebrow):not(.slide-count) { font-size: 13px; } .hero-stage-visual { min-height: 340px; border-radius: 14px; } .visual-caption { right: 18px; bottom: 18px; left: 18px; display: block; } .visual-caption strong { display: block; margin-top: 8px; text-align: left; } .visual-hud { padding: 13px; font-size: 8px; } .stage-controls > button { width: 44px; height: 44px; } }
