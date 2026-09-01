@@ -49,7 +49,7 @@ export default function Home() {
       <div>CYBER THISTLE<small>SECURE SOLUTIONS · SEAMLESS EXPERIENCES</small></div>
     </a>
     <nav className="desktop-nav">
-      {Object.keys(menus).map(item=><div key={item} onMouseEnter={()=>setMenu(item)}><button className={menu===item?"nav-active":""} aria-expanded={menu===item}>{item}<ChevronDown size={14}/></button></div>)}
+      {Object.keys(menus).map(item=><div key={item} onMouseEnter={()=>setMenu(item)}><button className={menu===item?"nav-active":""} aria-expanded={menu===item} onClick={()=>setMenu(menu===item?null:item)}>{item}<ChevronDown size={14}/></button></div>)}
       <a href="#contact">Insights</a>
     </nav>
     <div className="header-actions">
