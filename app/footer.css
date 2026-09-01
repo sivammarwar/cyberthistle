@@ -1,9 +1,23 @@
 /* Keep footer accents in the CyberThistle purple system. */
 .footer .brand > span { border-color: var(--violet2); color: var(--violet2); }
 
+.footer {
+  font-family: "Signika", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "GRAD" 0;
+}
+
+.footer .brand div {
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .footer .footer-company-copy {
   margin-top: 18px;
   max-width: 340px;
+  font-size: 14px;
 }
 
 .footer .footer-contact-details {
@@ -11,7 +25,7 @@
   gap: 8px;
   margin-top: 20px;
   max-width: 340px;
-  font: 500 11px/1.65 "DM Mono", monospace;
+  font: 500 13px/1.65 "Signika", sans-serif;
   color: #c1d0da;
 }
 
@@ -22,4 +36,23 @@
 
 .footer .footer-contact-details a:hover {
   color: #fff;
+}
+
+.footer .footer-about b,
+.footer b {
+  font-family: "Signika", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer p,
+.footer a {
+  font-family: "Signika", sans-serif;
+  font-size: 15px;
+}
+
+/* Ensure all footer section headings have the same size */
+.footer > div > b {
+  font-size: 18px !important;
+  font-weight: 600 !important;
 }
