@@ -95,7 +95,7 @@ export default function Home() {
     <div><b>&lt;15<span>min</span></b><p>Critical response</p></div>
   </section>
   <section className="partners">
-    <span>TRUSTED BY INDUSTRY LEADERS</span>
+    <span>Supported By</span>
     <div className="partner-ticker" aria-label="Partner logos">
       <div className="partner-ticker-track">
         {[0,1,2].map(groupIndex=><div className="partner-ticker-group" aria-hidden={groupIndex>0} key={groupIndex}>
@@ -232,10 +232,10 @@ export default function Home() {
   </section>
   <footer className="footer">
     <div className="footer-brand">
-      <a className="brand" href="#top">
+      <div className="brand">
         <img className="brand-mark" src="/cyberthistle-shield.png" alt="CyberThistle shield"/>
         <div>CYBER THISTLE<small>SECURE SOLUTIONS · SEAMLESS EXPERIENCES</small></div>
-      </a>
+      </div>
       <p className="footer-company-copy">Leading cybersecurity solutions provider, protecting organizations worldwide with cutting-edge threat detection and response capabilities.</p>
       <div className="footer-contact-details">
         <span>Graham Hills Building (Level 6), 50 Richmond Street, Glasgow, G1 1XP</span>
