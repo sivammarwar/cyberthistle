@@ -94,6 +94,35 @@ export default function Home() {
     <div><b>24<span>/7</span></b><p>Security monitoring</p></div>
     <div><b>&lt;15<span>min</span></b><p>Critical response</p></div>
   </section>
+  <section className="partners">
+    <span>TRUSTED BY INDUSTRY LEADERS</span>
+    <div className="partner-ticker" aria-label="Partner logos">
+      <div className="partner-ticker-track">
+        {[0,1,2].map(groupIndex=><div className="partner-ticker-group" aria-hidden={groupIndex>0} key={groupIndex}>
+          <div className="partner-item">
+            <img src="/google-logo.png" alt="Google"/>
+            <span>Google</span>
+          </div>
+          <div className="partner-item">
+            <img src="/microsoft-logo.png" alt="Microsoft"/>
+            <span>Microsoft</span>
+          </div>
+          <div className="partner-item">
+            <img src="/barclays-logo.png" alt="Barclays"/>
+            <span>Barclays</span>
+          </div>
+          <div className="partner-item">
+            <img src="/rbs-logo.png" alt="Royal Bank of Scotland"/>
+            <span>Royal Bank of Scotland</span>
+          </div>
+          <div className="partner-item">
+            <img src="/strath-inspire-logo.png" alt="Strath Inspire"/>
+            <span>Strath Inspire</span>
+          </div>
+        </div>)}
+      </div>
+    </div>
+  </section>
   <section className="section about" id="about">
     <div className="about-layout">
       <div>
@@ -178,16 +207,6 @@ export default function Home() {
   <section className="trust">
     <span>BUILT FOR HIGH-ASSURANCE ENVIRONMENTS</span>
     <div><b>SOC<span>2</span></b><b>ISO 27001</b><b>GDPR</b><b>HIPAA</b><b>CREST</b></div>
-  </section>
-  <section className="partners">
-    <span>TRUSTED BY INDUSTRY LEADERS</span>
-    <div className="partner-logos">
-      <span>Google</span>
-      <span>Microsoft</span>
-      <span>Barclays</span>
-      <span>Royal Bank of Scotland</span>
-      <span>Strath Inspire</span>
-    </div>
   </section>
   <footer className="footer">
     <div className="footer-brand">
