@@ -122,6 +122,28 @@ export default function Home() {
         </div>)}
       </div>
     </div>
+    <div className="partner-grid-mobile">
+      <div className="partner-item-mobile">
+        <img src="/google-logo.png" alt="Google"/>
+        <span>Google</span>
+      </div>
+      <div className="partner-item-mobile">
+        <img src="/microsoft-logo.png" alt="Microsoft"/>
+        <span>Microsoft</span>
+      </div>
+      <div className="partner-item-mobile">
+        <img src="/barclays-logo.png" alt="Barclays"/>
+        <span>Barclays</span>
+      </div>
+      <div className="partner-item-mobile">
+        <img src="/rbs-logo.png" alt="Royal Bank of Scotland"/>
+        <span>RBS</span>
+      </div>
+      <div className="partner-item-mobile">
+        <img src="/strath-inspire-logo.png" alt="Strath Inspire"/>
+        <span>Strath Inspire</span>
+      </div>
+    </div>
   </section>
   <section className="section about" id="about">
     <div className="about-layout">
