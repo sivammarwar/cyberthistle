@@ -183,7 +183,7 @@ export default function Home() {
         <div className="waitlist-copy">
           <p className="eyebrow live">04 / EARLY ACCESS / QUANTUM READINESS</p>
           <p className="waitlist-index">THE NEXT SECURITY STANDARD</p>
-          <h2>Be ready before<br/><em>the threat arrives.</em></h2>
+          <h2>Be ready before<br/><span style={{color:"var(--violet2)"}}>the threat arrives.</span></h2>
           <p>Join our waitlist for early access to our post-quantum readiness programme, practical research and priority assessment slots.</p>
           <div className="waitlist-signals">
             <span><BadgeCheck/> Built for high-assurance teams</span>
@@ -203,7 +203,7 @@ export default function Home() {
         <div className="waitlist-copy">
           <p className="eyebrow live">04 / CONTACT US</p>
           <p className="waitlist-index">GET IN TOUCH</p>
-          <h2>Let's talk<br/><em>security.</em></h2>
+          <h2>Let's talk<br/><span style={{color:"var(--violet2)"}}>security.</span></h2>
           <p>Have questions about our cybersecurity solutions? Our team is ready to help you protect what matters most.</p>
           <div className="waitlist-signals">
             <span><BadgeCheck/> Expert consultation</span>
