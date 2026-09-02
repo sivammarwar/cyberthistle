@@ -41,7 +41,7 @@ function HeroCarousel() {
  </div>
 }
 export default function Home() {
- const [menu,setMenu]=useState<string|null>(null),[mobile,setMobile]=useState(false),[cookies,setCookies]=useState(true),[showCookieDetails,setShowCookieDetails]=useState(false),[cookieChoices,setCookieChoices]=useState({preferences:true,statistics:true,marketing:false}),[activeTab,setActiveTab]=useState<"waitlist"|"contact">("waitlist"); const menus:Record<string,{name:string;detail:string}[]>={Solutions:[{name:"Post-quantum readiness",detail:"Discover where cryptographic risk lives."},{name:"Threat intelligence",detail:"Stay ahead of emerging attack patterns."},{name:"Managed detection & response",detail:"24/7 expert monitoring and action."},{name:"Incident response",detail:"Move fast when every minute matters."},{name:"Security consulting",detail:"Practical strategy for complex environments."}],Products:[{name:"ThistleGuard Enterprise",detail:"Endpoint protection with intelligent response."},{name:"ThistleAI Threat Hunter",detail:"Machine learning-led threat hunting."},{name:"ThistleNet Analyzer",detail:"Deep network visibility at scale."},{name:"ThistleResponse Orchestrator",detail:"Automated incident coordination."},{name:"Quantum readiness assessment",detail:"A clear starting point for PQC planning."},{name:"Platform integrations",detail:"Fit security into your existing stack."}],Company:[{name:"About CyberThistle",detail:"Why we exist and where we're going."},{name:"How we work",detail:"The principles that guide every decision."},{name:"Contact us",detail:"Talk through your environment with an expert."},{name:"Join the waitlist",detail:"Get early access to quantum-readiness insights."}]};
+ const [menu,setMenu]=useState<string|null>(null),[mobile,setMobile]=useState(false),[cookies,setCookies]=useState(true),[showCookieDetails,setShowCookieDetails]=useState(false),[cookieChoices,setCookieChoices]=useState({preferences:true,statistics:true,marketing:false}),[activeTab,setActiveTab]=useState<"waitlist"|"contact">("waitlist"); const menus:Record<string,{name:string;detail:string}[]>={Solutions:[{name:"Post-quantum readiness",detail:"Discover where cryptographic risk lives."},{name:"Threat intelligence",detail:"Stay ahead of emerging attack patterns."},{name:"Managed detection & response",detail:"24/7 expert monitoring and action."},{name:"Incident response",detail:"Move fast when every minute matters."},{name:"Security consulting",detail:"Practical strategy for complex environments."}],Products:[{name:"ThistleGuard Enterprise",detail:"Endpoint protection with intelligent response."},{name:"ThistleAI Threat Hunter",detail:"Machine learning-led threat hunting."},{name:"ThistleNet Analyzer",detail:"Deep network visibility at scale."},{name:"ThistleResponse Orchestrator",detail:"Automated incident coordination."}],Company:[{name:"About CyberThistle",detail:"Why we exist and where we're going."},{name:"How we work",detail:"The principles that guide every decision."},{name:"Contact us",detail:"Talk through your environment with an expert."},{name:"Join the waitlist",detail:"Get early access to quantum-readiness insights."}]};
  return <main>
   <header className="header">
     <a className="brand" href="#top">
@@ -105,7 +105,7 @@ export default function Home() {
       </div>
       <div className="values">
         <span className="eyebrow">HOW WE WORK</span>
-        {["Security without compromise","Practical excellence","One team with our clients","Always ready for what's next","Clarity over complexity","Resilience built in","Evidence-led decisions","Ownership at every level","Privacy by design","Progress with purpose"].map((x,i)=><div key={x}><b>{String(i+1).padStart(2,"0")}</b><span>{x}</span></div>)}
+        {["Security without compromise","Practical excellence","One team with our clients","Clarity over complexity","Evidence-led decisions"].map((x,i)=><div key={x}><b>{String(i+1).padStart(2,"0")}</b><span>{x}</span></div>)}
       </div>
     </div>
   </section>
@@ -133,7 +133,7 @@ export default function Home() {
           <p className="eyebrow live">04 / EARLY ACCESS / QUANTUM READINESS</p>
           <p className="waitlist-index">THE NEXT SECURITY STANDARD</p>
           <h2>Be ready before<br/><em>the threat arrives.</em></h2>
-          <p>Join the CyberThistle waitlist for early access to our post-quantum readiness programme, practical research and priority assessment slots.</p>
+          <p>Join our waitlist for early access to our post-quantum readiness programme, practical research and priority assessment slots.</p>
           <div className="waitlist-signals">
             <span><BadgeCheck/> Built for high-assurance teams</span>
             <span><BadgeCheck/> No noise. Only practical intelligence.</span>
@@ -178,6 +178,16 @@ export default function Home() {
   <section className="trust">
     <span>BUILT FOR HIGH-ASSURANCE ENVIRONMENTS</span>
     <div><b>SOC<span>2</span></b><b>ISO 27001</b><b>GDPR</b><b>HIPAA</b><b>CREST</b></div>
+  </section>
+  <section className="partners">
+    <span>TRUSTED BY INDUSTRY LEADERS</span>
+    <div className="partner-logos">
+      <span>Google</span>
+      <span>Microsoft</span>
+      <span>Barclays</span>
+      <span>Royal Bank of Scotland</span>
+      <span>Strath Inspire</span>
+    </div>
   </section>
   <footer className="footer">
     <div className="footer-brand">
