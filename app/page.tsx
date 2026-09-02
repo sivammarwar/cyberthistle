@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowRight, BadgeCheck, ChevronDown, ChevronLeft, ChevronRight, CircleDot, Globe2, Linkedin, Menu, Search, ShieldCheck, X } from "lucide-react";
+import { ArrowRight, BadgeCheck, ChevronDown, ChevronLeft, ChevronRight, CircleDot, Globe2, Linkedin, Menu, ShieldCheck, X } from "lucide-react";
 
 const services = [
   ["Threat Intelligence", "Continuous intelligence that reveals emerging threats, exposed assets and attacker activity before they become business-impacting incidents.", "Real-time monitoring · IOC analysis · Dark web monitoring · Threat briefings"],
@@ -53,7 +53,6 @@ export default function Home() {
       <a href="#contact">Insights</a>
     </nav>
     <div className="header-actions">
-      <button className="icon"><Search size={18}/></button>
       <button className="language"><Globe2 size={16}/> EN</button>
       <a className="button small" href="#contact">Get started <ArrowRight size={15}/></a>
       <button className="mobile-toggle" onClick={()=>setMobile(!mobile)}>{mobile?<X/>:<Menu/>}</button>
