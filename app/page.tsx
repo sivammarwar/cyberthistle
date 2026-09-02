@@ -228,7 +228,7 @@ export default function Home() {
   </section>
   <section className="trust">
     <span>BUILT FOR HIGH-ASSURANCE ENVIRONMENTS</span>
-    <div><b>SOC<span>2</span></b><b>ISO 27001</b><b>GDPR</b><b>HIPAA</b><b>CREST</b></div>
+    <div><b>Cyber Essentials Plus</b><b>B Corp</b><b>ISO 27001</b><b>SOC 2 Type II</b></div>
   </section>
   <footer className="footer">
     <div className="footer-brand">
@@ -243,9 +243,10 @@ export default function Home() {
         <a href="mailto:contact@cyberthistle.com">contact@cyberthistle.com</a>
       </div>
       <div className="certifications">
+        <span>Cyber Essentials Plus</span>
+        <span>B Corp</span>
         <span>ISO 27001</span>
-        <span>SOC 2</span>
-        <span>GDPR</span>
+        <span>SOC 2 Type II</span>
       </div>
     </div>
     <div className="footer-about">
